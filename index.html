@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cevichería Haydee — Frescura y Sabor</title>
+    <meta name="description" content="Cevichería Haydee - ceviches frescos, menú del día y delivery" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#" class="brand">Cevichería <span>Haydee</span></a>
+        <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">☰</button>
+        <nav id="primary-navigation" class="nav">
+          <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>Ceviches frescos y mariscos con sabor a casa</h1>
+            <p>Ingredientes locales, recetas tradicionales y servicio cordial. ¡Prueba nuestro ceviche del día!</p>
+            <div class="hero-ctas">
+              <a class="btn btn-primary" href="#menu">Ver Menú</a>
+              <a class="btn" href="#contact">Reservar</a>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section id="about" class="container about">
+        <h2>Sobre nosotros</h2>
+        <p class="lead">En Cevichería Haydee combinamos recetas familiares con los mejores ingredientes del día. Ambiente acogedor y opciones para llevar.</p>
+        <div class="grid grid-2">
+          <div>
+            <h3>Calidad</h3>
+            <p>Selección diaria de pescado y mariscos, preparados al momento.</p>
+          </div>
+          <div>
+            <h3>Servicio</h3>
+            <p>Atención amable y rápida, con opción de delivery y encargos.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="container menu">
+        <h2>Menú Destacado</h2>
+        <p class="muted">Platos seleccionados para empezar — precios aproximados</p>
+        <div class="grid grid-3 menu-grid">
+          <article class="card">
+            <div class="card-media ceviche-classic"></div>
+            <div class="card-body">
+              <h3>Ceviche Clásico</h3>
+              <p> pescado fresco, limón, cebolla, ají y cilantro.</p>
+              <div class="card-meta">
+                <span class="price">$8.50</span>
+                <a class="btn-sm" href="#contact">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media tiradito"></div>
+            <div class="card-body">
+              <h3>Tiradito Nikkei</h3>
+              <p>láminas de pescado, salsa cítrica y toque de soja.</p>
+              <div class="card-meta">
+                <span class="price">$9.50</span>
+                <a class="btn-sm" href="#contact">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media causa"></div>
+            <div class="card-body">
+              <h3>Causa de Mar</h3>
+              <p>cremosa, con pulpo y toque de ají amarillo.</p>
+              <div class="card-meta">
+                <span class="price">$7.00</span>
+                <a class="btn-sm" href="#contact">Pedir</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="container reservation">
+        <h2>Reserva o encarga</h2>
+        <form id="reservation-form" class="form-grid">
+          <label>Nombre<input type="text" name="name" required></label>
+          <label>Teléfono<input type="tel" name="phone" required></label>
+          <label>Fecha<input type="date" name="date" required></label>
+          <label>Hora<input type="time" name="time" required></label>
+          <label class="full">Mensaje<textarea name="message" rows="3"></textarea></label>
+          <button class="btn btn-primary" type="submit">Enviar reserva</button>
+        </form>
+      </section>
+
+      <section id="contact" class="container contact">
+        <h2>Contacto</h2>
+        <p>Dirección: Calle Ficticia 123 · Tel: (000) 111-222</p>
+        <p>Horario: Lun-Dom 12:00 - 22:00</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Cevichería Haydee — Hecho con ❤️</p>
+        <nav class="footer-nav">
+          <a href="#">Política</a>
+          <a href="#">Aviso</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js" defer></script>
+  </body>
+</html>
