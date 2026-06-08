@@ -35,7 +35,7 @@ body{
 .eyebrow{margin:0 0 1rem;font-size:.9rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
 .hero-text h1{font-size:2rem;margin:0 0 .8rem;line-height:1.1}
 .lead{color:var(--muted);margin-top:0}
-.hero-visual{height:300px;border-radius:16px;background:linear-gradient(135deg,var(--accent),var(--accent-2));box-shadow:0 10px 30px rgba(14,165,164,0.12)}
+.hero-visual{display:none}
 .hero-ctas{margin-top:1.4rem;display:flex;gap:.7rem;flex-wrap:wrap}
 .btn{display:inline-block;padding:.7rem 1.2rem;border-radius:10px;background:transparent;border:2px solid rgba(15,23,42,0.08);text-decoration:none;color:var(--text);font-weight:600;transition:all .25s ease}
 .btn:hover{transform:translateY(-1px);box-shadow:0 12px 30px rgba(15,23,42,0.08)}
@@ -48,7 +48,8 @@ body{
 .catalog-grid{display:grid;gap:1.5rem}
 .dish-card{transition:transform .25s ease,box-shadow .25s ease}
 .dish-card:hover{transform:translateY(-4px);box-shadow:0 18px 36px rgba(2,6,23,0.14)}
-.dish-media{height:240px;background-size:cover;background-position:center;border-bottom:1px solid #f1f5f9}
+.dish-img{width:100%;height:240px;object-fit:cover;display:block;border-bottom:1px solid #f1f5f9}
+.dish-media{display:none}
 .dish-details{margin-top:1rem}
 .price-list,
 .tag-list,
@@ -66,9 +67,9 @@ body{
 
 .card{background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:0 6px 18px rgba(2,6,23,0.06);display:flex;flex-direction:column}
 .card-media{height:140px;background-size:cover;background-position:center}
-.ceviche-classic{background-image:linear-gradient(0deg,rgba(0,0,0,0.08),transparent),url('');background-color:#ffd8cc}
-.tiradito{background-color:#ffe9b8}
-.causa{background-color:#d3f4ff}
+.ceviche-classic{background:none}
+.tiradito{background:none}
+.causa{background:none}
 .card-body{padding:1rem}
 .card-body h3{margin:.2rem 0}
 .card-meta{display:flex;justify-content:space-between;align-items:center;margin-top:0.6rem}
@@ -117,7 +118,7 @@ body{
   .nav ul{flex-direction:column;gap:0}
   .nav{display:none}
   .nav-toggle{display:block}
-  .hero-visual{height:220px}
+  .hero-visual{display:none}
   .grid-3{grid-template-columns:1fr}
   .catalog-layout{grid-template-columns:1fr}
   .price-list{grid-template-columns:1fr}
