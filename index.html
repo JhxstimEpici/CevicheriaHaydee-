@@ -27,15 +27,17 @@
     </header>
 
     <main>
-      <section id="home" class="hero">
+      <section id="home" class="hero hero-center">
         <div class="container hero-inner">
+          <div class="hero-brand" aria-hidden="false">
+            <img src="recursos/imagenes/logo.jpg" alt="Logo Cevichería Haydee" class="hero-logo">
+          </div>
           <div class="hero-text">
-            <p class="eyebrow">Catálogo de platos marinos</p>
-            <h1>Ceviches frescos y mariscos con sabor a casa</h1>
-            <p>Ingredientes locales, recetas tradicionales y servicio cordial. Descubre nuestro catálogo de ceviches con opciones para compartir o pedir para llevar.</p>
+            <h1>Bienvenidos a Cevichería Haydee</h1>
+            <p class="lead">Cevichería de platos marinos — frescura y sabor casero. Disfruta de nuestros ceviches tradicionales preparados al momento.</p>
             <div class="hero-ctas">
               <a class="btn btn-primary" href="#catalog">Ver catálogo</a>
-              <a class="btn" href="#contact">Reservar</a>
+              <a class="btn" href="#contact">Contacto</a>
             </div>
           </div>
         </div>
@@ -56,47 +58,39 @@
         </div>
       </section>
 
-      <section id="menu" class="container menu">
-        <h2>Menú Destacado</h2>
-        <p class="muted">Platos seleccionados para empezar — precios aproximados</p>
-        <div class="grid grid-3 menu-grid">
-          <article class="card">
-            <div class="card-media ceviche-classic"></div>
+      <section id="adicionales" class="container adicionales">
+        <div class="section-header">
+          <h2>Adicionales</h2>
+          <p class="lead muted">Acompaña tu ceviche con nuestras opciones tradicionales.</p>
+        </div>
+        <div class="addons-grid">
+          <article class="card addon-card">
+            <img class="addon-img" src="recursos/imagenes/papaRellena.png" alt="Papa rellena">
             <div class="card-body">
-              <h3>Ceviche Clásico</h3>
-              <p> pescado fresco, limón, cebolla, ají y cilantro.</p>
-              <div class="card-meta">
-                <span class="price">$8.50</span>
-                <a class="btn-sm" href="#contact">Pedir</a>
-              </div>
+              <h3>Papa rellena</h3>
+              <p class="price-small">S/2</p>
             </div>
           </article>
 
-          <article class="card">
-            <div class="card-media tiradito"></div>
+          <article class="card addon-card">
+            <img class="addon-img" src="recursos/imagenes/tortaChoclo.jpg" alt="Torta de choclo">
             <div class="card-body">
-              <h3>Tiradito Nikkei</h3>
-              <p>láminas de pescado, salsa cítrica y toque de soja.</p>
-              <div class="card-meta">
-                <span class="price">$9.50</span>
-                <a class="btn-sm" href="#contact">Pedir</a>
-              </div>
+              <h3>Torta de choclo</h3>
+              <p class="price-small">S/2</p>
             </div>
           </article>
 
-          <article class="card">
-            <div class="card-media causa"></div>
+          <article class="card addon-card">
+            <img class="addon-img" src="recursos/imagenes/papaAlaHuancaina.jpg" alt="Papa a la huancaína">
             <div class="card-body">
-              <h3>Causa de Mar</h3>
-              <p>cremosa, con pulpo y toque de ají amarillo.</p>
-              <div class="card-meta">
-                <span class="price">$7.00</span>
-                <a class="btn-sm" href="#contact">Pedir</a>
-              </div>
+              <h3>Papa a la huancaína</h3>
+              <p class="price-small">S/5</p>
             </div>
           </article>
         </div>
       </section>
+
+      <!-- Menú de ejemplo eliminado según indicaciones del cliente -->
 
       <section id="catalog" class="container catalog">
         <div class="section-header">
@@ -184,8 +178,21 @@
 
       <section id="contact" class="container contact">
         <h2>Contacto</h2>
-        <p>Dirección: Calle Ficticia 123 · Tel: (000) 111-222</p>
-        <p>Horario: Lun-Dom 12:00 - 22:00</p>
+        <div class="contact-grid">
+          <div>
+            <p><strong>Nombre:</strong> Cevichería Haydee</p>
+            <p><strong>Teléfono:</strong> 957148984</p>
+            <p><strong>Horario:</strong> Lun-Dom 12:00 - 22:00</p>
+          </div>
+          <div class="socials">
+            <p><strong>Síguenos</strong></p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook" class="social-link">Facebook</a>
+              <a href="#" aria-label="Instagram" class="social-link">Instagram</a>
+              <a href="#" aria-label="TikTok" class="social-link">TikTok</a>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
