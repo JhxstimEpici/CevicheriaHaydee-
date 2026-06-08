@@ -10,13 +10,16 @@
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a href="#" class="brand">Cevichería <span>Haydee</span></a>
+        <a href="#home" class="brand">
+          <img src="recursos/imagenes/logo.jpg" alt="Logo Cevichería Haydee" class="brand-logo">
+          <span>Cevichería <strong>Haydee</strong></span>
+        </a>
         <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">☰</button>
         <nav id="primary-navigation" class="nav">
           <ul>
             <li><a href="#home">Inicio</a></li>
             <li><a href="#menu">Menú</a></li>
-            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#catalog">Catálogo</a></li>
             <li><a href="#contact">Contacto</a></li>
           </ul>
         </nav>
@@ -27,10 +30,11 @@
       <section id="home" class="hero">
         <div class="container hero-inner">
           <div class="hero-text">
+            <p class="eyebrow">Catálogo de platos marinos</p>
             <h1>Ceviches frescos y mariscos con sabor a casa</h1>
-            <p>Ingredientes locales, recetas tradicionales y servicio cordial. ¡Prueba nuestro ceviche del día!</p>
+            <p>Ingredientes locales, recetas tradicionales y servicio cordial. Descubre nuestro catálogo de ceviches con opciones para compartir o pedir para llevar.</p>
             <div class="hero-ctas">
-              <a class="btn btn-primary" href="#menu">Ver Menú</a>
+              <a class="btn btn-primary" href="#catalog">Ver catálogo</a>
               <a class="btn" href="#contact">Reservar</a>
             </div>
           </div>
@@ -92,6 +96,78 @@
               </div>
             </div>
           </article>
+        </div>
+      </section>
+
+      <section id="catalog" class="container catalog">
+        <div class="section-header">
+          <h2>Catálogo de ceviches</h2>
+          <p class="lead muted">Elige entre nuestros ceviches premium, acompañados con opciones clásicas y listos para disfrutar.</p>
+        </div>
+        <div class="catalog-layout">
+          <div class="catalog-grid">
+            <article class="card dish-card">
+              <div class="dish-media" style="background-image:url('recursos/imagenes/cevicheDeTollo.jpg');"></div>
+              <div class="card-body">
+                <h3>Ceviche de tollo</h3>
+                <p>Fresco, suave y preparado con limón, cebolla morada y ají amarillo.</p>
+                <div class="dish-details">
+                  <p class="small">Precios del ceviche:</p>
+                  <ul class="price-list">
+                    <li>S/10</li>
+                    <li>S/12</li>
+                    <li>S/15</li>
+                    <li>S/20</li>
+                  </ul>
+                  <p class="small">Acompañamientos opcionales:</p>
+                  <ul class="tag-list">
+                    <li>Papa</li>
+                    <li>Torta de choclo</li>
+                    <li>Papa a la huancaína</li>
+                  </ul>
+                  <p class="note">Los acompañamientos se pueden pedir por separado.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="card dish-card">
+              <div class="dish-media" style="background-image:url('recursos/imagenes/cevicheMixto.jpg');"></div>
+              <div class="card-body">
+                <h3>Ceviche mixto</h3>
+                <p>Combinación de pescado, mariscos y sabor cítrico para una experiencia completa.</p>
+                <div class="dish-details">
+                  <p class="small">Precios del ceviche:</p>
+                  <ul class="price-list">
+                    <li>S/10</li>
+                    <li>S/12</li>
+                    <li>S/15</li>
+                    <li>S/20</li>
+                  </ul>
+                  <p class="small">Acompañamientos opcionales:</p>
+                  <ul class="tag-list">
+                    <li>Papa</li>
+                    <li>Torta de choclo</li>
+                    <li>Papa a la huancaína</li>
+                  </ul>
+                  <p class="note">Los acompañamientos se pueden pedir por separado.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <aside class="card info-panel">
+            <div class="card-body">
+              <h3>Acompañamientos disponibles</h3>
+              <p>Completa tu ceviche con nuestras opciones más tradicionales, pensadas para acompañar cada bocado.</p>
+              <ul class="addons-list">
+                <li><strong>Papa rellena</strong> — S/2</li>
+                <li><strong>Torta de choclo</strong> — S/2</li>
+                <li><strong>Papa a la huancaína</strong> — S/5</li>
+              </ul>
+              <p class="note">Puedes pedir estos acompañamientos por separado o en conjunto con tu ceviche.</p>
+              <a class="btn btn-primary" href="#contact">Pedir ahora</a>
+            </div>
+          </aside>
         </div>
       </section>
 
