@@ -93,13 +93,16 @@ body{
 .footer-inner{display:flex;justify-content:space-between;align-items:center}
 .footer-nav a{margin-left:1rem;color:var(--muted);text-decoration:none}
 
-.contact-grid{display:grid;grid-template-columns:1fr 220px;gap:1rem;align-items:center}
-.contact-grid .social-links{display:flex;flex-direction:column;gap:.5rem}
-.social-link{display:inline-block;padding:.4rem .6rem;border-radius:8px;background:transparent;border:1px solid rgba(15,23,42,0.04);text-decoration:none;color:var(--text)}
-.social-link:hover{background:rgba(0,0,0,0.04)}
+.contact-info{
+  margin-bottom:1.5rem;
+}
+
+.contact-info p{
+  margin:.5rem 0;
+  line-height:1.6;
+}
 
 .contact-buttons{
-  margin-top:1.5rem;
   display:flex;
   gap:1rem;
   flex-wrap:wrap;
@@ -183,6 +186,8 @@ body{
   .catalog-layout{grid-template-columns:1fr}
   .price-list{grid-template-columns:1fr}
   .form-grid{grid-template-columns:1fr}
+  .contact-buttons{flex-direction:column}
+  .btn-whatsapp, .btn-facebook{width:100%;justify-content:center}
 }
 
 html{font-family:'Lato', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif}
