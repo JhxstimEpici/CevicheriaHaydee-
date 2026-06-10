@@ -1,48 +1,54 @@
-Cevichería Haydee — Catálogo de platos marinos
-=============================================
+Cevichería Haydee — Página web de menú
+=======================================
 
 Descripción
 -----------
-Este repositorio contiene la página web estática de la Cevichería Haydee. Se agregó una sección de catálogo de ceviches con dos platos iniciales (Ceviche de tollo y Ceviche mixto), imágenes y estilos responsivos. El objetivo es que el cliente entienda rápidamente qué se vende, los precios disponibles y los acompañamientos.
+Este proyecto es una página web sencilla para Cevichería Haydee. Presenta:
+- un catálogo de ceviches
+- una sección de adicionales
+- una sección de platos calientes
+- un formulario de reserva
+- información de contacto y redes sociales
 
-Estructura del proyecto
------------------------
-- `index.html` — Página principal y nueva sección `#catalog` (catálogo de ceviches).
-- `assets/css/styles.css` — Estilos principales; contiene las reglas nuevas para tarjetas y catálogo.
-- `assets/js/script.js` — JavaScript ligero (menú móvil, formulario de reserva, año en footer).
-- `recursos/imagenes/` — Imágenes y logo usadas por la web (subidas al repositorio).
+Todo está hecho con HTML, CSS y JavaScript simple, sin usar frameworks externos.
 
-Cómo ver el sitio localmente
----------------------------
-1. Abrir una terminal en la raíz del proyecto.
-2. Iniciar un servidor estático (ejemplo con Python 3):
+Qué contiene
+-------------
+- `index.html` — la página completa con todas las secciones.
+- `assets/css/styles.css` — los colores, la tipografía y el diseño responsivo.
+- `assets/js/script.js` — animaciones suaves, menú móvil, año automático y navegación activa.
+- `recursos/imagenes/` — las fotos usadas en el sitio.
+
+Cómo ver el sitio
+-----------------
+1. Abre la carpeta del proyecto en tu navegador.
+2. Si quieres verlo como en un sitio real, usa un servidor local.
+   Por ejemplo, con Python 3:
 
 ```bash
 python -m http.server 8000
 ```
 
-3. Abrir `http://localhost:8000` en el navegador.
+3. Visita `http://localhost:8000`.
 
-Cómo añadir o editar platos en el catálogo
-----------------------------------------
-- Las tarjetas de plato están en `index.html` dentro de la sección con `id="catalog"`.
-- Para añadir un nuevo plato duplica una entrada `<article class="card dish-card">` y actualiza:
-  - la imagen en `style="background-image:url('recursos/imagenes/archivo.jpg')"`;
-  - el título y la descripción;
-  - las listas de precios y acompañamientos.
+Qué puedes cambiar fácilmente
+-----------------------------
+- Cambia textos y precios directamente en `index.html`.
+- Añade nuevos platos o adicionales copiando las tarjetas existentes.
+- Cambia colores y fuentes en `assets/css/styles.css`.
 
-Recomendaciones de mantenimiento
--------------------------------
-- Mantén las imágenes en `recursos/imagenes/` con nombres descriptivos.
-- Revisa `:root` en `assets/css/styles.css` para ajustar colores, radios y contenedores globales.
-- Evita duplicar estilos: crea clases reutilizables cuando agregues nuevos componentes.
+Cómo funciona ahora
+-------------------
+- El menú se adapta a móviles y escritorio.
+- El encabezado añade un efecto cuando bajas la página.
+- Las tarjetas aparecen con una animación al entrar en pantalla.
+- El formulario muestra una confirmación al enviar, pero no envía datos a un servidor.
 
-Control de versiones
---------------------
-- Ya se realizaron los commits y push con los mensajes:
-  - `agregando ceviches`
-  - `agregando recursos e imágenes`
+Notas
+-----
+- Mantén las imágenes en `recursos/imagenes/` con nombres claros.
+- Si agregas más platos, usa el mismo estilo de tarjetas para que el diseño siga uniforme.
 
-Contacto y siguientes pasos
---------------------------
-Si quieres que prepare instrucciones para desplegar en GitHub Pages, crear un release o generar plantillas HTML para nuevos platos, indícalo y lo preparo.
+Siguiente paso
+---------------
+Si quieres, puedo actualizar esto para que también incluya instrucciones para publicar el sitio en GitHub Pages o para añadir secciones nuevas como "A la carta" y "Menú del día".
