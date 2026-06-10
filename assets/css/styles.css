@@ -98,16 +98,17 @@ body{
 .social-link{display:inline-block;padding:.4rem .6rem;border-radius:8px;background:transparent;border:1px solid rgba(15,23,42,0.04);text-decoration:none;color:var(--text)}
 .social-link:hover{background:rgba(0,0,0,0.04)}
 
-.whatsapp-section{
+.contact-buttons{
   margin-top:1.5rem;
   display:flex;
+  gap:1rem;
+  flex-wrap:wrap;
 }
 
-.btn-whatsapp{
+.btn-whatsapp, .btn-facebook{
   display:flex;
   align-items:center;
   gap:.7rem;
-  background:#25D366;
   color:#fff;
   border:0;
   padding:.8rem 1.4rem;
@@ -117,13 +118,27 @@ body{
   transition:all .25s ease;
 }
 
+.btn-whatsapp{
+  background:#25D366;
+}
+
 .btn-whatsapp:hover{
   background:#20BA5A;
   transform:translateY(-2px);
   box-shadow:0 12px 30px rgba(37,211,102,0.3);
 }
 
-.whatsapp-icon{
+.btn-facebook{
+  background:#1877F2;
+}
+
+.btn-facebook:hover{
+  background:#0A66C2;
+  transform:translateY(-2px);
+  box-shadow:0 12px 30px rgba(24,119,242,0.3);
+}
+
+.contact-icon{
   width:1.2rem;
   height:1.2rem;
   flex-shrink:0;
