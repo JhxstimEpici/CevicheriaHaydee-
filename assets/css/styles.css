@@ -86,12 +86,12 @@ body::after{
 html{scroll-behavior:smooth}
 html,body{height:100%}
 .container{max-width:var(--container);margin:0 auto;padding:2rem}
-.site-header{background:transparent;position:sticky;top:0;z-index:40;padding:.45rem 0;}
+.site-header{background:transparent;position:sticky;top:0;z-index:40;padding:6px 0;min-height:auto;line-height:normal;}
 .header-inner{display:flex;align-items:center;justify-content:space-between}
 .brand{display:inline-flex;align-items:center;gap:.8rem;font-weight:700;font-size:1.2rem;color:var(--text);text-decoration:none}
 .brand-logo{
-  width:45px;
-  height:45px;
+  width:auto;
+  height:50px;
   border-radius:12px;
   object-fit:cover;
   box-shadow:0 10px 24px rgba(2,6,23,0.08);
@@ -353,6 +353,16 @@ h1,h2,h3,h4, .brand strong{font-family:'Playfair Display', serif;}
 .site-header.scrolled{
   box-shadow:0 18px 40px rgba(15,23,42,0.08);
   backdrop-filter:blur(12px);
+}
+
+header img, nav img {
+  height: 50px !important;
+  width: auto !important;
+}
+header, nav {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+  min-height: unset !important;
 }
 
 .hot-grid{
