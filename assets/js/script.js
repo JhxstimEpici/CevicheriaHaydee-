@@ -32,4 +32,48 @@ document.addEventListener('DOMContentLoaded',function(){
       form.reset();
     });
   }
+
+  // header scroll effect and scrollspy
+  const header = document.querySelector('.site-header');
+  const sections = document.querySelectorAll('main section[id]');
+  const navLinks = document.querySelectorAll('#primary-navigation a');
+
+  const updateHeader = () => {
+    header && header.classList.toggle('scrolled', window.scrollY > 20);
+  };
+
+  const updateActiveNav = () => {
+    let current = sections[0]?.id;
+    sections.forEach(section => {
+      const rect = section.getBoundingClientRect();
+      if(rect.top <= 120 && rect.bottom > 120){
+        current = section.id;
+      }
+    });
+    navLinks.forEach(link => {
+      link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
+    });
+  };
+
+  window.addEventListener('scroll', () => {
+    updateHeader();
+    updateActiveNav();
+  }, { passive: true });
+  updateHeader();
+  updateActiveNav();
+
+  // animate cards into view
+  const animatedItems = document.querySelectorAll('.animate-on-scroll');
+  if(animatedItems.length){
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('animate-in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.18 });
+
+    animatedItems.forEach(item => observer.observe(item));
+  }
 });

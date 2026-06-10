@@ -6,6 +6,9 @@
     <title>Cevichería Haydee — Frescura y Sabor</title>
     <meta name="description" content="Cevichería Haydee - ceviches frescos, menú del día y delivery" />
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="site-header">
@@ -20,6 +23,7 @@
             <li><a href="#home">Inicio</a></li>
             <li><a href="#menu">Menú</a></li>
             <li><a href="#catalog">Catálogo</a></li>
+            <li><a href="#platos-calientes">Platos calientes</a></li>
             <li><a href="#contact">Contacto</a></li>
           </ul>
         </nav>
@@ -94,12 +98,12 @@
 
       <section id="catalog" class="container catalog">
         <div class="section-header">
-          <h2>Catálogo de ceviches</h2>
+          <h2><span class="section-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 12c4-1.5 7-1.5 10 0 1.5.7 2.5 1.9 3 3.4.2.7.2 1.4 0 2.1-.4 1.5-1.5 2.7-3 3.4-3 1.5-6 1.5-10 0-1.5-.7-2.5-1.9-3-3.4-.2-.7-.2-1.4 0-2.1C1.5 13.9 2.5 12.7 4 12Z" fill="currentColor"/><path d="M14.5 7a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z" fill="currentColor"/></svg></span>Catálogo de ceviches</h2>
           <p class="lead muted">Elige entre nuestros ceviches premium, acompañados con opciones clásicas y listos para disfrutar.</p>
         </div>
         <div class="catalog-layout">
           <div class="catalog-grid">
-            <article class="card dish-card">
+            <article class="card dish-card animate-on-scroll">
               <img class="dish-img" src="recursos/imagenes/cevicheDeTollo.jpg" alt="Ceviche de tollo">
               <div class="card-body">
                 <h3>Ceviche de tollo</h3>
@@ -123,7 +127,7 @@
               </div>
             </article>
 
-            <article class="card dish-card">
+            <article class="card dish-card animate-on-scroll">
               <img class="dish-img" src="recursos/imagenes/cevicheMixto.jpg" alt="Ceviche mixto">
               <div class="card-body">
                 <h3>Ceviche mixto</h3>
@@ -161,6 +165,39 @@
               <a class="btn btn-primary" href="#contact">Pedir ahora</a>
             </div>
           </aside>
+        </div>
+      </section>
+
+      <section id="platos-calientes" class="container hot-dishes">
+        <div class="section-header">
+          <h2><span class="section-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 12c4-1.5 7-1.5 10 0 1.5.7 2.5 1.9 3 3.4.2.7.2 1.4 0 2.1-.4 1.5-1.5 2.7-3 3.4-3 1.5-6 1.5-10 0-1.5-.7-2.5-1.9-3-3.4-.2-.7-.2-1.4 0-2.1C.5 13.9 1.5 12.7 3 12Z" fill="currentColor"/><path d="M13.5 7a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z" fill="currentColor"/></svg></span>Platos calientes</h2>
+          <p class="lead muted">Disfruta de opciones calientes pensadas para complementar tu pedido de ceviche.</p>
+        </div>
+        <div class="hot-grid">
+          <article class="card hot-card animate-on-scroll">
+            <div class="hot-media" aria-hidden="true"></div>
+            <div class="card-body">
+              <h3>Arroz con Leche de Tigre</h3>
+              <p>Arroz cremoso bañado en leche de tigre artesanal.</p>
+              <p class="price">S/. 28</p>
+            </div>
+          </article>
+          <article class="card hot-card animate-on-scroll">
+            <div class="hot-media" aria-hidden="true"></div>
+            <div class="card-body">
+              <h3>Chicharrón de Calamar</h3>
+              <p>Calamar apanado y frito, servido con salsa criolla.</p>
+              <p class="price">S/. 35</p>
+            </div>
+          </article>
+          <article class="card hot-card animate-on-scroll">
+            <div class="hot-media" aria-hidden="true"></div>
+            <div class="card-body">
+              <h3>Sudado de Pescado</h3>
+              <p>Pescado fresco cocinado en caldo de ají amarillo.</p>
+              <p class="price">S/. 42</p>
+            </div>
+          </article>
         </div>
       </section>
 
