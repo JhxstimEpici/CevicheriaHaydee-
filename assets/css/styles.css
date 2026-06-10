@@ -9,23 +9,21 @@
   --container:1100px;
 }
 body{
-  background-color:var(--bg);
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color:var(--text);
+  background-color:#f5ead6;
   background-image:
-    radial-gradient(circle at 20% 50%, rgba(26,107,74,0.03) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(200,169,126,0.03) 0%, transparent 50%),
-    repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(26,107,74,0.02) 35px, rgba(26,107,74,0.02) 70px);
-  position:relative;
+    linear-gradient(135deg, #f5ead6 0%, #eaf5e0 45%, #e0f4f1 100%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Ccircle cx='3' cy='3' r='1.2' fill='rgba(255,255,255,0.07)'/%3E%3Ccircle cx='13' cy='3' r='1.2' fill='rgba(255,255,255,0.07)'/%3E%3Ccircle cx='3' cy='13' r='1.2' fill='rgba(255,255,255,0.07)'/%3E%3Ccircle cx='13' cy='13' r='1.2' fill='rgba(255,255,255,0.07)'/%3E%3C/svg%3E");
+  background-repeat: no-repeat, repeat;
+  background-size: cover, 180px 180px;
+  background-attachment: fixed;
+  -webkit-font-smoothing:antialiased;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 html,body{height:100%}
-body{
-  margin:0;
-  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-  color:var(--text);
-  background:var(--bg);
-  -webkit-font-smoothing:antialiased;
-}
 .container{max-width:var(--container);margin:0 auto;padding:2rem}
 .site-header{background:transparent;position:sticky;top:0;z-index:40}
 .header-inner{display:flex;align-items:center;justify-content:space-between}
@@ -248,6 +246,16 @@ body{
   .form-grid{grid-template-columns:1fr}
   .contact-buttons{flex-direction:column}
   .btn-whatsapp, .btn-facebook{width:100%;justify-content:center}
+}
+
+@media (min-width:768px) {
+  .brand-logo {
+    width: 120px;
+    height: 120px;
+  }
+  .site-header {
+    padding: 0.75rem 0;
+  }
 }
 
 html{font-family:'Lato', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif}
